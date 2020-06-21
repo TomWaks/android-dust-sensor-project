@@ -1,0 +1,312 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/TV_nameLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:id="@+id/LL_Loc_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TV_Date"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/TV_Location"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135px"
+        android:layout_marginBottom="200px"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/LL_Calendar"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_showOtherDates="all"
+                app:mcv_arrowColor="@color/colorWhite"
+                app:mcv_selectionColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/TV_SelectedDay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:text="Wybierz datę"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_Dust"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[ug/m3]"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorBlack"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartPM"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ORYGINALNE"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SKORYGOWANE"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:id="@+id/TV_PM2_5_Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PM2.5"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlueDark"/>
+                <TextView
+                    android:id="@+id/TV_PM10_Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PM10"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRedDark"/>
+                <TextView
+                    android:id="@+id/TV_PM2_5C_Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PM2.5"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlue"/>
+                <TextView
+                    android:id="@+id/TV_PM10C_Line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PM10"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_Humidity"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[%]"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorBlack"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartHumi"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_Temperature"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="['C]"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorBlack"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartTemp"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_Pressure"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[hPa]"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorBlack"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartPress"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/PB_Loading"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp"
+            android:indeterminateTint="@color/colorAccent"
+            android:padding="170dp"
+            android:scrollbarSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_white_rect"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/IV_Calendar"
+            android:layout_width="0dp"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_calendar_selected"/>
+        <ImageView
+            android:id="@+id/IV_Dust"
+            android:layout_width="0dp"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_dust"/>
+        <ImageView
+            android:id="@+id/IV_Humidity"
+            android:layout_width="0dp"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_humidity"/>
+        <ImageView
+            android:id="@+id/IV_Temperature"
+            android:layout_width="0dp"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_temperature"/>
+        <ImageView
+            android:id="@+id/IV_Pressure"
+            android:layout_width="0dp"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_pressure"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

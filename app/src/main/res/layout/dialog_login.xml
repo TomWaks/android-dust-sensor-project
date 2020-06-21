@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_white_rect"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Weryfikacja"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Podaj 4-cyfrowy PIN"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:hint="****"
+            android:password="true"
+            android:inputType="number|textPassword|numberDecimal|numberPassword"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:singleLine="true">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvErr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="Błędny PIN!"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/logInClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_white_rect"
+        android:text="Zamknij"/>
+
+</LinearLayout>
