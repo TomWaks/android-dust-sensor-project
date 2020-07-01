@@ -32,10 +32,8 @@ This activity is responsible for presentation data for selected location in [Map
 * The user can select date for which data should be shown.
 <kbd>![Alt text](images/charts_activity_calendar.png)</kbd>
 * The user can show charts:
-- PM2.5
-<kbd>![Alt text](images/charts_activity_pm2_5.png)</kbd>
-- PM10
-<kbd>![Alt text](images/charts_activity_pm_10.png)</kbd>
+- PM2.5 and PM10
+<kbd>![Alt text](images/charts_activity_pm.png)</kbd>
 - air temperature
 <kbd>![Alt text](images/charts_activity_temperature.png)</kbd>
 - atmospheric pressure
