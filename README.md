@@ -24,6 +24,7 @@ This activity is responsible for giving possibilities to changing configuration 
 * numbers of measurement
 * break time between measurement
 * radius of accuracy
+
 <kbd>![Alt text](images/config_activity.png)</kbd>
 
 
@@ -34,9 +35,12 @@ This activity is responsible for presentation data for selected location in [Map
 * The user can show charts:
 - PM2.5 and PM10
 <kbd>![Alt text](images/charts_activity_pm.png)</kbd>
+
 - air temperature
 <kbd>![Alt text](images/charts_activity_temperature.png)</kbd>
+
 - atmospheric pressure
 <kbd>![Alt text](images/charts_activity_pressure.png)</kbd>
+
 - relative air humidity
 <kbd>![Alt text](images/charts_activity_humidity.png)</kbd>
