@@ -15,6 +15,7 @@ The user can select location and go to presention all data for this location.
 Other actions for user:
 - go to [ConfigActivity](#config-activity)
 - refresh current activity
+
 <kbd>![Alt text](images/maps_activity_menu.png)</kbd>
 
 
@@ -31,16 +32,22 @@ This activity is responsible for giving possibilities to changing configuration 
 ## ChartsActivity 
 This activity is responsible for presentation data for selected location in [MapsActivity](#maps-activity):
 * The user can select date for which data should be shown.
+
 <kbd>![Alt text](images/charts_activity_calendar.png)</kbd>
-* The user can show charts:
+
+The user can show charts:
 - PM2.5 and PM10
+
 <kbd>![Alt text](images/charts_activity_pm.png)</kbd>
 
 - air temperature
+
 <kbd>![Alt text](images/charts_activity_temperature.png)</kbd>
 
 - atmospheric pressure
+
 <kbd>![Alt text](images/charts_activity_pressure.png)</kbd>
 
 - relative air humidity
+
 <kbd>![Alt text](images/charts_activity_humidity.png)</kbd>
